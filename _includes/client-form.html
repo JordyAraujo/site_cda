@@ -1,4 +1,8 @@
-<section id="seja-cliente" class="section" style="background-image: url('{{ site.data.client.img | relative_url }}')">
+<section
+  id="seja-cliente"
+  class="section"
+  style="background-image: url('{{ site.data.client.img | relative_url }}')"
+>
   <div class="container">
     <div class="columns is-mobile header-title">
       <div class="column">
@@ -12,21 +16,25 @@
       <div class="column has-text-grey-light">
         <p class="has-text-grey-light is-size-4">
           {{ site.data.client.subtitle }}
-          <br> <br>
+          <br />
+          <br />
         </p>
-        <p class="is-size-5">
-          {{ site.data.client.text }}
-        </p>
+        <p class="is-size-5">{{ site.data.client.text }}</p>
       </div>
 
       <div class="column">
         <form name="client" method="POST" data-netlify="true">
-          
           <div class="field-body pt-4">
             <div class="field">
               <label class="has-text-grey-light">Empresa</label>
               <p class="control is-expanded has-icons-left">
-                <input class="input" type="text" name="empesa" placeholder="Empresa" required/>
+                <input
+                  class="input"
+                  type="text"
+                  name="empesa"
+                  placeholder="Empresa"
+                  required
+                />
                 <span class="icon is-small is-left">
                   <i class="fas fa-user"></i>
                 </span>
@@ -35,7 +43,13 @@
             <div class="field">
               <label class="has-text-grey-light">CNPJ</label>
               <div class="control">
-                <input class="input" type="text" name="cnpj" placeholder="Informe seu CNPJ" required/>
+                <input
+                  class="input"
+                  type="text"
+                  name="cnpj"
+                  placeholder="Informe seu CNPJ"
+                  required
+                />
               </div>
             </div>
           </div>
@@ -43,7 +57,13 @@
           <div class="field pt-4">
             <label class="has-text-grey-light">Ramo da atividade</label>
             <div class="control">
-              <input class="input" type="text" name="atividade" placeholder="Informe atividade" required/>
+              <input
+                class="input"
+                type="text"
+                name="atividade"
+                placeholder="Informe atividade"
+                required
+              />
             </div>
           </div>
 
@@ -51,7 +71,13 @@
             <div class="field">
               <label class="has-text-grey-light">Nome</label>
               <p class="control is-expanded has-icons-left">
-                <input class="input" type="text" name="nome" placeholder="Nome" required/>
+                <input
+                  class="input"
+                  type="text"
+                  name="nome"
+                  placeholder="Nome"
+                  required
+                />
                 <span class="icon is-small is-left">
                   <i class="fas fa-user"></i>
                 </span>
@@ -60,7 +86,13 @@
             <div class="field">
               <label class="has-text-grey-light">Email</label>
               <p class="control is-expanded has-icons-left has-icons-right">
-                <input class="input" type="email" name="email" placeholder="Email" required/>
+                <input
+                  class="input"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+                />
                 <span class="icon is-small is-left">
                   <i class="fas fa-envelope"></i>
                 </span>
@@ -72,25 +104,49 @@
             <div class="field pt-4">
               <label class="has-text-grey-light">Cidade</label>
               <div class="control">
-                <input class="input" type="text" name="cidade" placeholder="Informe sua cidade" required/>
+                <input
+                  class="input"
+                  type="text"
+                  name="cidade"
+                  placeholder="Informe sua cidade"
+                  required
+                />
               </div>
             </div>
             <div class="field pt-4">
               <label class="has-text-grey-light">Bairro</label>
               <div class="control">
-                <input class="input" type="text" name="bairro" placeholder="Informe seu bairro" required/>
+                <input
+                  class="input"
+                  type="text"
+                  name="bairro"
+                  placeholder="Informe seu bairro"
+                  required
+                />
               </div>
             </div>
             <div class="field pt-4">
               <label class="has-text-grey-light">UF</label>
               <div class="control">
-                <input class="input" type="text" name="uf" placeholder="Informe a UF do seu Estado" required/>
+                <input
+                  class="input"
+                  type="text"
+                  name="uf"
+                  placeholder="Informe a UF do seu Estado"
+                  required
+                />
               </div>
             </div>
             <div class="field pt-4">
               <label class="has-text-grey-light">CEP</label>
               <div class="control">
-                <input class="input" type="text" name="CEP" placeholder="Informe o CEP" required/>
+                <input
+                  class="input"
+                  type="text"
+                  name="CEP"
+                  placeholder="Informe o CEP"
+                  required
+                />
               </div>
             </div>
           </div>
@@ -99,13 +155,26 @@
             <div class="field">
               <label class="has-text-grey-light">Rua</label>
               <div class="control">
-                <input class="input" type="text" name="rua" placeholder="Informe sua rua" required/>
+                <input
+                  class="input"
+                  type="text"
+                  name="rua"
+                  placeholder="Informe sua rua"
+                  required
+                />
               </div>
             </div>
             <div class="field">
               <label class="has-text-grey-light">Celular</label>
               <p class="control is-expanded has-icons-left has-icons-right">
-                <input id="client-mask-phone" class="input" type="tel" name="telefone" placeholder="Celular" required/>
+                <input
+                  id="client-mask-phone"
+                  class="input"
+                  type="tel"
+                  name="telefone"
+                  placeholder="Celular"
+                  required
+                />
                 <span class="icon is-small is-left">
                   <i class="fas fa-mobile-alt"></i>
                 </span>
@@ -117,7 +186,13 @@
             <div class="field pt-4">
               <label class="has-text-grey-light">Ponto de Referência</label>
               <div class="control">
-                <input class="input" type="text" name="referencia" placeholder="Informe um local de referência" required/>
+                <input
+                  class="input"
+                  type="text"
+                  name="referencia"
+                  placeholder="Informe um local de referência"
+                  required
+                />
               </div>
             </div>
           </div>

@@ -1,35 +1,47 @@
 <section id="contato" class="section contact-us">
-    <div class="container">
-      <div class="columns is-mobile header-title">
-        <div class="column">
-          <h1 class="title is-2 has-text-centered has-text-white">
-            {{ site.data.contact.title }}
-          </h1>
+  <div class="container">
+    <div class="columns is-mobile header-title">
+      <div class="column">
+        <h1 class="title is-2 has-text-centered has-text-white">
+          {{ site.data.contact.title }}
+        </h1>
+      </div>
+    </div>
+
+    <div class="columns">
+      <div class="column">
+        <p class="title is-5 has-text-centered has-text-white">
+          {{ site.data.contact.where }}
+        </p>
+        <div class="box iframe-rwd">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.842902595309!2d-35.21445968458844!3d-5.877692059520619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2f8ab1c239bb7%3A0xc6eb6181da5e82a6!2sCDA%20Distribuidora!5e0!3m2!1spt-BR!2sbr!4v1601060283667!5m2!1spt-BR!2sbr"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
         </div>
       </div>
+      <div class="column">
+        <p class="title is-5 has-text-centered has-text-white">
+          {{ site.data.contact.text }}
+        </p>
 
-      <div class="columns">
-        <div class="column">
-          <p class="title is-5 has-text-centered has-text-white">
-            {{ site.data.contact.where }}
-          </p>
-          <div class="box iframe-rwd">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.842902595309!2d-35.21445968458844!3d-5.877692059520619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2f8ab1c239bb7%3A0xc6eb6181da5e82a6!2sCDA%20Distribuidora!5e0!3m2!1spt-BR!2sbr!4v1601060283667!5m2!1spt-BR!2sbr" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-          </div>
-        </div>
-        <div class="column">
-          <p class="title is-5  has-text-centered has-text-white">
-            {{ site.data.contact.text }}
-          </p>
-
-          <!-- Forms -->
+        <!-- Forms -->
         <form name="contact" method="POST" data-netlify="true">
-
           <div class="field-body pb-4">
             <div class="field">
               <label class="label has-text-white">Nome</label>
               <div class="control has-icons-left">
-                <input class="input" type="text"  name="name" placeholder="Informe seu nome" required>
+                <input
+                  class="input"
+                  type="text"
+                  name="name"
+                  placeholder="Informe seu nome"
+                  required
+                />
                 <span class="icon is-small is-left">
                   <i class="fas fa-user"></i>
                 </span>
@@ -38,7 +50,13 @@
             <div class="field">
               <label class="label has-text-white">Email</label>
               <div class="control has-icons-left">
-                <input class="input" type="email"  name="email" placeholder="Informe seu email" required>
+                <input
+                  class="input"
+                  type="email"
+                  name="email"
+                  placeholder="Informe seu email"
+                  required
+                />
                 <span class="icon is-small is-left">
                   <i class="fas fa-envelope"></i>
                 </span>
@@ -50,28 +68,51 @@
             <div class="field">
               <label class="label has-text-white">Cidade</label>
               <div class="control">
-                <input class="input" type="text" name="cidade" placeholder="Informe sua cidade" required/>
+                <input
+                  class="input"
+                  type="text"
+                  name="cidade"
+                  placeholder="Informe sua cidade"
+                  required
+                />
               </div>
             </div>
             <div class="field">
               <label class="label has-text-white">Bairro</label>
               <div class="control">
-                <input class="input" type="text" name="bairro" placeholder="Informe seu bairro" required/>
+                <input
+                  class="input"
+                  type="text"
+                  name="bairro"
+                  placeholder="Informe seu bairro"
+                  required
+                />
               </div>
             </div>
             <div class="field">
               <label class="label has-text-white">UF</label>
               <div class="control">
-                <input class="input" type="text" name="uf" placeholder="Informe a UF do seu Estado" required/>
+                <input
+                  class="input"
+                  type="text"
+                  name="uf"
+                  placeholder="Informe a UF do seu Estado"
+                  required
+                />
               </div>
             </div>
             <div class="field">
               <label class="label has-text-white">CEP</label>
               <div class="control">
-                <input class="input" type="text" name="CEP" placeholder="Informe o CEP" required/>
+                <input
+                  class="input"
+                  type="text"
+                  name="CEP"
+                  placeholder="Informe o CEP"
+                  required
+                />
               </div>
             </div>
-            
           </div>
 
           <div class="field">
@@ -80,18 +121,26 @@
               <div class="field is-expanded">
                 <div class="field has-addons">
                   <p class="control is-expanded control has-icons-left">
-                    <input id="phone-mask-contact" class="input" type="tel" name="phone" placeholder="Informe seu número" required>
+                    <input
+                      id="phone-mask-contact"
+                      class="input"
+                      type="tel"
+                      name="phone"
+                      placeholder="Informe seu número"
+                      required
+                    />
                     <span class="icon is-small is-left">
                       <i class="fas fa-mobile-alt"></i>
                     </span>
                   </p>
                 </div>
-                <p class="help has-text-white">Coloque assim o número. Exemplo: 84-9923-1632</p>
+                <p class="help has-text-white">
+                  Coloque assim o número. Exemplo: 84-9923-1632
+                </p>
               </div>
             </div>
           </div>
-        
-          
+
           <div class="field">
             <label class="label has-text-white">Assunto</label>
             <div class="control">
@@ -104,11 +153,16 @@
               </div>
             </div>
           </div>
-          
+
           <div class="field">
             <label class="label has-text-white">Mensagem</label>
             <div class="control">
-              <textarea class="textarea" placeholder="Digite sua mensagem" name="message" required></textarea>
+              <textarea
+                class="textarea"
+                placeholder="Digite sua mensagem"
+                name="message"
+                required
+              ></textarea>
             </div>
           </div>
           <div class="field is-grouped">
@@ -117,7 +171,7 @@
             </div>
           </div>
         </form>
-        </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>

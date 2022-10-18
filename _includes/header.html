@@ -1,10 +1,10 @@
 <section id="inicio" class="sticky">
-    <div class="carousel">
-      {% for slide in site.slides %}
-      <div class="carousel-cell">
-        <img class="carousel-cell-image" src="{{ slide.img | relative_url }}"/>
-      </div>
-      {% endfor %}
+  <div class="carousel">
+    {% for slide in site.slides %}
+    <div class="carousel-cell">
+      <img class="carousel-cell-image" src="{{ slide.img | relative_url }}" />
     </div>
+    {% endfor %}
+  </div>
   {%- include nav.html -%}
 </section>

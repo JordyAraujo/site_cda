@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e6b0a6ce-3595-4a53-8491-9b8e501aad72/deploy-status)](https://app.netlify.com/sites/cdanatal/deploys)
 
-## Instalando o Jekyll:
+## Instalando o Jekyll
 
 Antes de instalarmos o Jekyll, precisamos instalar
 todas as dependências necessárias.
@@ -25,7 +25,7 @@ source ~/.bashrc
 
 Por fim, vamos instalar o Jekyll:
 
-```
+```bash
 gem install jekyll bundler
 ```
 
@@ -33,12 +33,12 @@ gem install jekyll bundler
 
 Instale as dependências do projeto:
 
-```
+```bash
 bundle install
 ```
 
 Rodando o site:
 
-```
+```bash
 bundle exec jekyll serve -l
 ```

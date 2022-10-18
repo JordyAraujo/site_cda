@@ -1,11 +1,9 @@
 <section id="brands">
   <div class="carousel">
-    {% for img in site.static_files %}
-    {% if img.path contains 'brands' %}
-        <div class="carousel-cell">
-          <img class="carousel-cell-image" src="{{ img.path | relative_url }}">
-        </div>
-      {% endif %}
-    {% endfor %}
+    {% for img in site.static_files %} {% if img.path contains 'brands' %}
+    <div class="carousel-cell">
+      <img class="carousel-cell-image" src="{{ img.path | relative_url }}" />
+    </div>
+    {% endif %} {% endfor %}
   </div>
 </section>
