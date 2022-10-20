@@ -2,7 +2,17 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e6b0a6ce-3595-4a53-8491-9b8e501aad72/deploy-status)](https://app.netlify.com/sites/cdanatal/deploys)
 
-## Instalando o Jekyll
+## Instalando o Jekyll em Windows
+
+Primeiro, é preciso instalar o Ruby no RubyInstaller [aqui](https://rubyinstaller.org/downloads/).
+
+ No último estágio do assistente de instalação rode o seguinte comando:
+
+```bash
+ridk install
+```
+
+## Instalando o Jekyll em Linux
 
 Antes de instalarmos o Jekyll, precisamos instalar
 todas as dependências necessárias.
