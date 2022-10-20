@@ -12,6 +12,16 @@ Primeiro, é preciso instalar o Ruby no RubyInstaller [aqui](https://rubyinstall
 ridk install
 ```
 
+Entre as opções, escolha as ferramentas de desenvolvimento MSYS2 e MINGW.
+
+Após a instalação, abra um novo prompt de comando e instale o Jekyll com o comando abaixo:
+
+```bash
+gem install jekyll bundler
+```
+
+Para verificar se a instalação deu certo, basta rodar o comando `jekyll -v`, se retornar a versão do Jekyll, então deu tudo certo.
+
 ## Instalando o Jekyll em Linux
 
 Antes de instalarmos o Jekyll, precisamos instalar
